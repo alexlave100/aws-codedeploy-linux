@@ -5,5 +5,10 @@ then
     cd /home/ec2-user
     mkdir Staging
     cd Staging
-    echo "This was staging" > staging.txt 
+    echo "This was staging" > staging.txt
+elif [ "$DEPLOYMENT_GROUP_NAME" == "CrossRegion-MP" ]
+    cd /home/ec2-user
+    mkdir CrossRegion-MP
+    cd CrossRegion-MP
+    echo "This CrossRegion-MP" > crossregion.txt
 fi
