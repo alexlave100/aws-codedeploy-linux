@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$DEPLOYMENT_GROUP_NAME" == "Staging" ]
+then
+    cd /home/ec2-user
+    mkdir Staging
+    cd Staging
+    echo "This was staging" > staging.txt 
+fi
